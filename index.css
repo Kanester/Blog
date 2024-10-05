@@ -1,0 +1,46 @@
+@import url("css/screen/small.css");
+@import url("css/sreen/medium.css");
+@import url("css/screen/large.css");
+@import url("css/animation.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+ padding: 1.5rem 2rem;
+ background-color: #222831;
+ color: #fff;
+}
+
+.checkbtn {
+ font-size: 1.5rem;
+ color: white;
+ cursor: pointer;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+#check:checked ~ .nav-mobile {
+ display: block;
+}
+
+.nav-mobile {
+ position: absolute;
+ top: 4.5rem;
+ left: 0;
+ background: #222831;
+ z-index: 1;
+ width: 100%;
+}
+
+.nav-mobile a {
+ color: #fff;
+ padding: 1rem 1.5rem;
+ display: block;
+ border: solid 0.5px;
+}
