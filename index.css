@@ -10,6 +10,31 @@
 }
 
 nav {
+  padding: 1.5rem 2rem;
+  background: #222831;
+  color: #fff;
+}
+
+.nav {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .nav {
+  display: block;
+}
+
+/*
+nav {
  padding: 1.5rem 2rem;
  background-color: #222831;
  color: #fff;
@@ -27,6 +52,11 @@ nav {
 
 #check:checked ~ .nav-mobile {
  display: block;
+ animation: slide-down linear 1s;
+}
+
+#check:not(:checked) ~ .nav-mobile {
+  animation: slide-down reverse 1s;
 }
 
 .nav-mobile {
@@ -44,3 +74,4 @@ nav {
  display: block;
  border: solid 0.5px;
 }
+*/
